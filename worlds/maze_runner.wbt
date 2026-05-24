@@ -1,0 +1,4493 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/animals/protos/Cat.proto"
+
+WorldInfo {
+}
+Group {
+  children [
+    Solid {
+      translation 0.9000000000000001 0.9000000000000001 -0.01
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.3 0.3 0.3
+            roughness 0.9
+          }
+          geometry Box {
+            size 2.1 2.1 0.02
+          }
+        }
+      ]
+      name "maze_floor"
+      boundingObject Box {
+        size 2.1 2.1 0.02
+      }
+    }
+    Solid {
+      translation -0.1 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_1_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.3 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_14_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.8 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_19_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_0"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_1"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 1.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_1"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_1"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_1"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_1_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.7 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_2"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.6 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_3"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.5 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_4"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_5"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.3 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_6"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.2 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_7"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_1_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_8"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_9"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.9 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_10"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_11"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_11"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 0.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_11"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 0.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_11"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_11"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.8 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_11"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_1_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.7000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_12"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.6000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_13"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.5000000000000001 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_14"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_15"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_15"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_15"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.4 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_15"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_1_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.3 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_14_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.30000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_16"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.20000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_17"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.20000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_17"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 0.20000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_17"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.20000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_17"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.20000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_17"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.20000000000000004 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_17"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.3 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_14_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_18"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 0 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_19"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 0 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_19"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation -0.1 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_0_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_1_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.1 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_2_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.20000000000000004 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_3_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.30000000000000004 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_4_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.4 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_5_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.5000000000000001 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_6_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.6000000000000001 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_7_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.7000000000000001 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_8_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.8 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_9_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 0.9 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_10_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_11_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.1 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_12_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.2 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_13_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.3 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_14_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.4 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_15_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.5 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_16_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.6 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_17_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.7 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_18_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.8 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_19_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+    Solid {
+      translation 1.9 -0.1 0.06
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.2 0.5 0.8
+            roughness 0.8
+            metalness 0.1
+          }
+          geometry Box {
+            size 0.1 0.1 0.12
+          }
+        }
+      ]
+      name "maze_wall_20_20"
+      boundingObject Box {
+        size 0.1 0.1 0.12
+      }
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.5759062880183579 0.5773478646328899 0.5787930464550854 2.0900680732637213
+  position 0.7961413190561961 0.8690260878483835 4.855107751523168
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+E-puck {
+  translation 0 1.8 0
+  controller "maze_runner_controller"
+  turretSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+Cat {
+  translation 0.7 1.31 0
+  rotation 0 0 -1 -5.307179586466759e-06
+  scale 0.2
+  color 0 1 0
+}
+Cat {
+  translation 0.53 1.8 0
+  rotation 0 0 1 1.5708
+  scale 0.2
+  name "cat(1)"
+  color 0 1 0
+}
+Robot {
+  controller "<none>"
+  supervisor TRUE
+}
